@@ -32,8 +32,8 @@
             this.labelCafe = new System.Windows.Forms.Label();
             this.labelPetrol = new System.Windows.Forms.Label();
             this.labelPrice = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBoxPriceTop = new System.Windows.Forms.TextBox();
+            this.comboBoxPetrol = new System.Windows.Forms.ComboBox();
             this.groupBoxPriceLitr = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -52,8 +52,8 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxLitr = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxAzn = new System.Windows.Forms.MaskedTextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -107,21 +107,21 @@
             this.labelPrice.TabIndex = 1;
             this.labelPrice.Text = "Price";
             // 
-            // textBox1
+            // textBoxPriceTop
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 165);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 2;
+            this.textBoxPriceTop.Location = new System.Drawing.Point(145, 165);
+            this.textBoxPriceTop.Name = "textBoxPriceTop";
+            this.textBoxPriceTop.ReadOnly = true;
+            this.textBoxPriceTop.Size = new System.Drawing.Size(121, 20);
+            this.textBoxPriceTop.TabIndex = 2;
             // 
-            // comboBox1
+            // comboBoxPetrol
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(145, 107);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
+            this.comboBoxPetrol.FormattingEnabled = true;
+            this.comboBoxPetrol.Location = new System.Drawing.Point(145, 107);
+            this.comboBoxPetrol.Name = "comboBoxPetrol";
+            this.comboBoxPetrol.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxPetrol.TabIndex = 3;
             // 
             // groupBoxPriceLitr
             // 
@@ -311,23 +311,24 @@
             this.textBox11.TabIndex = 9;
             this.textBox11.Text = "4,40";
             // 
-            // maskedTextBox1
+            // maskedTextBoxLitr
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(175, 223);
-            this.maskedTextBox1.Mask = "00000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 10;
-            this.maskedTextBox1.ValidatingType = typeof(int);
+            this.maskedTextBoxLitr.Location = new System.Drawing.Point(175, 223);
+            this.maskedTextBoxLitr.Mask = "00000";
+            this.maskedTextBoxLitr.Name = "maskedTextBoxLitr";
+            this.maskedTextBoxLitr.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBoxLitr.TabIndex = 10;
+            this.maskedTextBoxLitr.ValidatingType = typeof(int);
             // 
-            // maskedTextBox2
+            // maskedTextBoxAzn
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(175, 261);
-            this.maskedTextBox2.Mask = "00000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox2.TabIndex = 10;
-            this.maskedTextBox2.ValidatingType = typeof(int);
+            this.maskedTextBoxAzn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(231)))), ((int)(((byte)(253)))));
+            this.maskedTextBoxAzn.Location = new System.Drawing.Point(175, 261);
+            this.maskedTextBoxAzn.Mask = "00000";
+            this.maskedTextBoxAzn.Name = "maskedTextBoxAzn";
+            this.maskedTextBoxAzn.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBoxAzn.TabIndex = 10;
+            this.maskedTextBoxAzn.ValidatingType = typeof(int);
             // 
             // textBox2
             // 
@@ -335,6 +336,7 @@
             this.textBox2.Location = new System.Drawing.Point(175, 343);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 41);
             this.textBox2.TabIndex = 11;
             // 
@@ -344,6 +346,7 @@
             this.textBox3.Location = new System.Drawing.Point(559, 343);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(100, 41);
             this.textBox3.TabIndex = 11;
             // 
@@ -410,12 +413,12 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBoxAzn);
             this.Controls.Add(this.maskedTextBox6);
             this.Controls.Add(this.maskedTextBox5);
             this.Controls.Add(this.maskedTextBox4);
             this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.maskedTextBoxLitr);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
@@ -432,8 +435,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxPriceLitr);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBoxPetrol);
+            this.Controls.Add(this.textBoxPriceTop);
             this.Controls.Add(this.labelPrice);
             this.Controls.Add(this.labelPetrol);
             this.Controls.Add(this.labelCafe);
@@ -452,8 +455,8 @@
         private System.Windows.Forms.Label labelCafe;
         private System.Windows.Forms.Label labelPetrol;
         private System.Windows.Forms.Label labelPrice;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBoxPriceTop;
+        private System.Windows.Forms.ComboBox comboBoxPetrol;
         private System.Windows.Forms.GroupBox groupBoxPriceLitr;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
@@ -472,8 +475,8 @@
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxLitr;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxAzn;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
