@@ -91,21 +91,53 @@ namespace Oil_system1
             {
                 maskedtbCola.Enabled = false;
             }
-
             if (maskedtbCola.Text != String.Empty)
             {
-              cafe.foods[3].Count= int.Parse(maskedtbCola.Text);
+                cafe.foods[3].Count = int.Parse(maskedtbCola.Text);
             }
-             
         }
-
         private void maskedtbHotDog_Leave(object sender, EventArgs e)
         {
             if (maskedtbHotDog.Text != String.Empty)
             {
                 cafe.foods[0].Count = int.Parse(maskedtbHotDog.Text);
             }
-            textBCafePrice.Text = oilSystem.GetAllPrice().ToString();
+            cafe.Price += cafe.foods[0].Count * cafe.foods[0].Price;
+            textBCafePrice.Text = cafe.GetPrice().ToString();
+            maskedtbHotDog.Enabled = false;
+        }
+
+        private void maskedtbQamburger_Leave(object sender, EventArgs e)
+        {
+            if (maskedtbQamburger.Text != String.Empty)
+            {
+                cafe.foods[1].Count = int.Parse(maskedtbQamburger.Text);
+            }
+            cafe.Price += cafe.foods[1].Count* cafe.foods[1].Price;
+            textBCafePrice.Text = cafe.GetPrice().ToString();
+            
+            maskedtbQamburger.Enabled = false;
+        }
+
+        private void maskedtbFries_Leave(object sender, EventArgs e)
+        {
+            if (maskedtbFries.Text != String.Empty)
+            {
+                cafe.foods[2].Count = int.Parse(maskedtbFries.Text);
+            }
+            cafe.Price += cafe.foods[2].Count * cafe.foods[2].Price;
+            textBCafePrice.Text = cafe.GetPrice().ToString();
+            maskedtbFries.Enabled = false;
+        }
+        private void maskedtbCola_Leave(object sender, EventArgs e)
+        {
+            if (maskedtbCola.Text != String.Empty)
+            {
+                cafe.foods[3].Count = int.Parse(maskedtbCola.Text);
+            }
+            cafe.Price += cafe.foods[3].Count * cafe.foods[3].Price;
+            textBCafePrice.Text = cafe.GetPrice().ToString();
+            maskedtbCola.Enabled = false;
         }
     }
 }

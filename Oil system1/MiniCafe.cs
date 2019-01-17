@@ -27,13 +27,7 @@ namespace Oil_system1
     {
         public double Price { get; set; }
         public double GetPrice()
-        {
-            foreach (var item in foods)
-            {
-                
-                Price += item.Count * item.Price;
-                //System.Windows.Forms.MessageBox.Show(Price.ToString());
-            }
+        {            
             return Price;
         }
         public List<Food> foods = new List<Food>()

@@ -342,6 +342,7 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(100, 41);
             this.textBox2.TabIndex = 11;
+            this.textBox2.Text = "0";
             // 
             // textBCafePrice
             // 
@@ -353,6 +354,7 @@
             this.textBCafePrice.ReadOnly = true;
             this.textBCafePrice.Size = new System.Drawing.Size(100, 41);
             this.textBCafePrice.TabIndex = 11;
+            this.textBCafePrice.Text = "0";
             // 
             // label4
             // 
@@ -390,6 +392,7 @@
             this.maskedtbQamburger.TabIndex = 10;
             this.maskedtbQamburger.Text = "0";
             this.maskedtbQamburger.ValidatingType = typeof(int);
+            this.maskedtbQamburger.Leave += new System.EventHandler(this.maskedtbQamburger_Leave);
             // 
             // maskedtbFries
             // 
@@ -400,6 +403,7 @@
             this.maskedtbFries.TabIndex = 10;
             this.maskedtbFries.Text = "0";
             this.maskedtbFries.ValidatingType = typeof(int);
+            this.maskedtbFries.Leave += new System.EventHandler(this.maskedtbFries_Leave);
             // 
             // maskedtbCola
             // 
@@ -410,6 +414,7 @@
             this.maskedtbCola.TabIndex = 10;
             this.maskedtbCola.Text = "0";
             this.maskedtbCola.ValidatingType = typeof(int);
+            this.maskedtbCola.Leave += new System.EventHandler(this.maskedtbCola_Leave);
             // 
             // Form1
             // 
