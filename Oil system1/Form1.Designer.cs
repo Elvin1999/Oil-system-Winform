@@ -35,8 +35,8 @@
             this.textBoxPriceTop = new System.Windows.Forms.TextBox();
             this.comboBoxPetrol = new System.Windows.Forms.ComboBox();
             this.groupBoxPriceLitr = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,10 +44,10 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBxHotdog = new System.Windows.Forms.CheckBox();
+            this.checkBxQamb = new System.Windows.Forms.CheckBox();
+            this.checkBxFries = new System.Windows.Forms.CheckBox();
+            this.checkBxCola = new System.Windows.Forms.CheckBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -55,13 +55,13 @@
             this.maskedTextBoxLitr = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBoxAzn = new System.Windows.Forms.MaskedTextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBCafePrice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedtbHotDog = new System.Windows.Forms.MaskedTextBox();
+            this.maskedtbQamburger = new System.Windows.Forms.MaskedTextBox();
+            this.maskedtbFries = new System.Windows.Forms.MaskedTextBox();
+            this.maskedtbCola = new System.Windows.Forms.MaskedTextBox();
             this.groupBoxPriceLitr.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,17 +134,6 @@
             this.groupBoxPriceLitr.TabIndex = 4;
             this.groupBoxPriceLitr.TabStop = false;
             // 
-            // radioButton1
-            // 
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(6, 10);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 26);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Litr";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // radioButton2
             // 
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -155,7 +144,17 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Price";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton1.Location = new System.Drawing.Point(6, 10);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(58, 26);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Litr";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -231,45 +230,49 @@
             this.textBox6.TabIndex = 6;
             this.textBox6.Text = "All price";
             // 
-            // checkBox1
+            // checkBxHotdog
             // 
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox1.Location = new System.Drawing.Point(480, 107);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(104, 24);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "Hot-Dog";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBxHotdog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBxHotdog.Location = new System.Drawing.Point(480, 107);
+            this.checkBxHotdog.Name = "checkBxHotdog";
+            this.checkBxHotdog.Size = new System.Drawing.Size(104, 24);
+            this.checkBxHotdog.TabIndex = 8;
+            this.checkBxHotdog.Text = "Hot-Dog";
+            this.checkBxHotdog.UseVisualStyleBackColor = true;
+            this.checkBxHotdog.CheckedChanged += new System.EventHandler(this.checkBxHotdog_CheckedChanged);
             // 
-            // checkBox2
+            // checkBxQamb
             // 
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox2.Location = new System.Drawing.Point(480, 146);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(104, 24);
-            this.checkBox2.TabIndex = 8;
-            this.checkBox2.Text = "Qamburger";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBxQamb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBxQamb.Location = new System.Drawing.Point(480, 146);
+            this.checkBxQamb.Name = "checkBxQamb";
+            this.checkBxQamb.Size = new System.Drawing.Size(104, 24);
+            this.checkBxQamb.TabIndex = 8;
+            this.checkBxQamb.Text = "Qamburger";
+            this.checkBxQamb.UseVisualStyleBackColor = true;
+            this.checkBxQamb.CheckedChanged += new System.EventHandler(this.checkBxQamb_CheckedChanged);
             // 
-            // checkBox3
+            // checkBxFries
             // 
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox3.Location = new System.Drawing.Point(480, 186);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(104, 24);
-            this.checkBox3.TabIndex = 8;
-            this.checkBox3.Text = "Fries";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBxFries.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBxFries.Location = new System.Drawing.Point(480, 186);
+            this.checkBxFries.Name = "checkBxFries";
+            this.checkBxFries.Size = new System.Drawing.Size(104, 24);
+            this.checkBxFries.TabIndex = 8;
+            this.checkBxFries.Text = "Fries";
+            this.checkBxFries.UseVisualStyleBackColor = true;
+            this.checkBxFries.CheckedChanged += new System.EventHandler(this.checkBxFries_CheckedChanged);
             // 
-            // checkBox4
+            // checkBxCola
             // 
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox4.Location = new System.Drawing.Point(480, 228);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(104, 24);
-            this.checkBox4.TabIndex = 8;
-            this.checkBox4.Text = "Cola-cola";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBxCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBxCola.Location = new System.Drawing.Point(480, 228);
+            this.checkBxCola.Name = "checkBxCola";
+            this.checkBxCola.Size = new System.Drawing.Size(104, 24);
+            this.checkBxCola.TabIndex = 8;
+            this.checkBxCola.Text = "Cola-cola";
+            this.checkBxCola.UseVisualStyleBackColor = true;
+            this.checkBxCola.CheckedChanged += new System.EventHandler(this.checkBxCola_CheckedChanged);
             // 
             // textBox7
             // 
@@ -340,15 +343,16 @@
             this.textBox2.Size = new System.Drawing.Size(100, 41);
             this.textBox2.TabIndex = 11;
             // 
-            // textBox3
+            // textBCafePrice
             // 
-            this.textBox3.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.textBox3.Location = new System.Drawing.Point(559, 343);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 41);
-            this.textBox3.TabIndex = 11;
+            this.textBCafePrice.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.textBCafePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBCafePrice.Location = new System.Drawing.Point(559, 343);
+            this.textBCafePrice.Multiline = true;
+            this.textBCafePrice.Name = "textBCafePrice";
+            this.textBCafePrice.ReadOnly = true;
+            this.textBCafePrice.Size = new System.Drawing.Size(100, 41);
+            this.textBCafePrice.TabIndex = 11;
             // 
             // label4
             // 
@@ -365,43 +369,47 @@
             this.label5.Size = new System.Drawing.Size(35, 23);
             this.label5.TabIndex = 12;
             this.label5.Text = "Azn";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // maskedTextBox3
+            // maskedtbHotDog
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(683, 107);
-            this.maskedTextBox3.Mask = "00000";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(54, 20);
-            this.maskedTextBox3.TabIndex = 10;
-            this.maskedTextBox3.ValidatingType = typeof(int);
+            this.maskedtbHotDog.Location = new System.Drawing.Point(683, 107);
+            this.maskedtbHotDog.Mask = "00000";
+            this.maskedtbHotDog.Name = "maskedtbHotDog";
+            this.maskedtbHotDog.Size = new System.Drawing.Size(54, 20);
+            this.maskedtbHotDog.TabIndex = 10;
+            this.maskedtbHotDog.Text = "0";
+            this.maskedtbHotDog.ValidatingType = typeof(int);
+            this.maskedtbHotDog.Leave += new System.EventHandler(this.maskedtbHotDog_Leave);
             // 
-            // maskedTextBox4
+            // maskedtbQamburger
             // 
-            this.maskedTextBox4.Location = new System.Drawing.Point(683, 146);
-            this.maskedTextBox4.Mask = "00000";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(54, 20);
-            this.maskedTextBox4.TabIndex = 10;
-            this.maskedTextBox4.ValidatingType = typeof(int);
+            this.maskedtbQamburger.Location = new System.Drawing.Point(683, 146);
+            this.maskedtbQamburger.Mask = "00000";
+            this.maskedtbQamburger.Name = "maskedtbQamburger";
+            this.maskedtbQamburger.Size = new System.Drawing.Size(54, 20);
+            this.maskedtbQamburger.TabIndex = 10;
+            this.maskedtbQamburger.Text = "0";
+            this.maskedtbQamburger.ValidatingType = typeof(int);
             // 
-            // maskedTextBox5
+            // maskedtbFries
             // 
-            this.maskedTextBox5.Location = new System.Drawing.Point(683, 186);
-            this.maskedTextBox5.Mask = "00000";
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(54, 20);
-            this.maskedTextBox5.TabIndex = 10;
-            this.maskedTextBox5.ValidatingType = typeof(int);
+            this.maskedtbFries.Location = new System.Drawing.Point(683, 186);
+            this.maskedtbFries.Mask = "00000";
+            this.maskedtbFries.Name = "maskedtbFries";
+            this.maskedtbFries.Size = new System.Drawing.Size(54, 20);
+            this.maskedtbFries.TabIndex = 10;
+            this.maskedtbFries.Text = "0";
+            this.maskedtbFries.ValidatingType = typeof(int);
             // 
-            // maskedTextBox6
+            // maskedtbCola
             // 
-            this.maskedTextBox6.Location = new System.Drawing.Point(683, 230);
-            this.maskedTextBox6.Mask = "00000";
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(54, 20);
-            this.maskedTextBox6.TabIndex = 10;
-            this.maskedTextBox6.ValidatingType = typeof(int);
+            this.maskedtbCola.Location = new System.Drawing.Point(683, 230);
+            this.maskedtbCola.Mask = "00000";
+            this.maskedtbCola.Name = "maskedtbCola";
+            this.maskedtbCola.Size = new System.Drawing.Size(54, 20);
+            this.maskedtbCola.TabIndex = 10;
+            this.maskedtbCola.Text = "0";
+            this.maskedtbCola.ValidatingType = typeof(int);
             // 
             // Form1
             // 
@@ -411,22 +419,22 @@
             this.ClientSize = new System.Drawing.Size(802, 537);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBCafePrice);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.maskedTextBoxAzn);
-            this.Controls.Add(this.maskedTextBox6);
-            this.Controls.Add(this.maskedTextBox5);
-            this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.maskedTextBox3);
+            this.Controls.Add(this.maskedtbCola);
+            this.Controls.Add(this.maskedtbFries);
+            this.Controls.Add(this.maskedtbQamburger);
+            this.Controls.Add(this.maskedtbHotDog);
             this.Controls.Add(this.maskedTextBoxLitr);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBxCola);
+            this.Controls.Add(this.checkBxFries);
+            this.Controls.Add(this.checkBxQamb);
+            this.Controls.Add(this.checkBxHotdog);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox6);
@@ -467,10 +475,10 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBxHotdog;
+        private System.Windows.Forms.CheckBox checkBxQamb;
+        private System.Windows.Forms.CheckBox checkBxFries;
+        private System.Windows.Forms.CheckBox checkBxCola;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
@@ -478,13 +486,13 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBoxLitr;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxAzn;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBCafePrice;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox6;
+        private System.Windows.Forms.MaskedTextBox maskedtbHotDog;
+        private System.Windows.Forms.MaskedTextBox maskedtbQamburger;
+        private System.Windows.Forms.MaskedTextBox maskedtbFries;
+        private System.Windows.Forms.MaskedTextBox maskedtbCola;
     }
 }
 
