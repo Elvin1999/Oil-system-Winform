@@ -16,5 +16,10 @@ namespace Oil_system1
         {
             InitializeComponent();
         }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
