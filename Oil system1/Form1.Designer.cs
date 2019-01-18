@@ -133,9 +133,9 @@
             this.groupBoxPriceLitr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.groupBoxPriceLitr.Controls.Add(this.radioBtnPrice);
             this.groupBoxPriceLitr.Controls.Add(this.radioBtnLiter);
-            this.groupBoxPriceLitr.Location = new System.Drawing.Point(71, 216);
+            this.groupBoxPriceLitr.Location = new System.Drawing.Point(71, 214);
             this.groupBoxPriceLitr.Name = "groupBoxPriceLitr";
-            this.groupBoxPriceLitr.Size = new System.Drawing.Size(98, 75);
+            this.groupBoxPriceLitr.Size = new System.Drawing.Size(98, 79);
             this.groupBoxPriceLitr.TabIndex = 4;
             this.groupBoxPriceLitr.TabStop = false;
             // 
@@ -143,7 +143,7 @@
             // 
             this.radioBtnPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.radioBtnPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioBtnPrice.Location = new System.Drawing.Point(6, 39);
+            this.radioBtnPrice.Location = new System.Drawing.Point(6, 43);
             this.radioBtnPrice.Name = "radioBtnPrice";
             this.radioBtnPrice.Size = new System.Drawing.Size(58, 26);
             this.radioBtnPrice.TabIndex = 0;
@@ -167,9 +167,9 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(293, 223);
+            this.label1.Location = new System.Drawing.Point(284, 223);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 23);
             this.label1.TabIndex = 5;
@@ -177,9 +177,9 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(293, 260);
+            this.label2.Location = new System.Drawing.Point(284, 261);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 20);
             this.label2.TabIndex = 5;
@@ -187,9 +187,9 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(293, 166);
+            this.label3.Location = new System.Drawing.Point(281, 166);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 20);
             this.label3.TabIndex = 5;
@@ -245,7 +245,7 @@
             // 
             // checkBxHotdog
             // 
-            this.checkBxHotdog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
+            this.checkBxHotdog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.checkBxHotdog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBxHotdog.Location = new System.Drawing.Point(480, 107);
             this.checkBxHotdog.Name = "checkBxHotdog";
@@ -257,7 +257,7 @@
             // 
             // checkBxQamb
             // 
-            this.checkBxQamb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
+            this.checkBxQamb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.checkBxQamb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBxQamb.Location = new System.Drawing.Point(480, 146);
             this.checkBxQamb.Name = "checkBxQamb";
@@ -269,7 +269,7 @@
             // 
             // checkBxFries
             // 
-            this.checkBxFries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
+            this.checkBxFries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.checkBxFries.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBxFries.Location = new System.Drawing.Point(480, 186);
             this.checkBxFries.Name = "checkBxFries";
@@ -281,7 +281,7 @@
             // 
             // checkBxCola
             // 
-            this.checkBxCola.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
+            this.checkBxCola.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.checkBxCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBxCola.Location = new System.Drawing.Point(480, 228);
             this.checkBxCola.Name = "checkBxCola";
@@ -388,7 +388,7 @@
             // 
             // label4
             // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(281, 346);
             this.label4.Name = "label4";
@@ -398,7 +398,7 @@
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(665, 346);
             this.label5.Name = "label5";
@@ -460,7 +460,7 @@
             // 
             // labelResult
             // 
-            this.labelResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
+            this.labelResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.labelResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelResult.Location = new System.Drawing.Point(536, 440);
             this.labelResult.Name = "labelResult";
