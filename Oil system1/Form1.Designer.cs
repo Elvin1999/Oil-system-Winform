@@ -69,7 +69,7 @@
             // 
             // labelGasStation
             // 
-            this.labelGasStation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelGasStation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
             this.labelGasStation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelGasStation.Location = new System.Drawing.Point(67, 43);
             this.labelGasStation.Name = "labelGasStation";
@@ -79,7 +79,7 @@
             // 
             // labelCafe
             // 
-            this.labelCafe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelCafe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
             this.labelCafe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCafe.Location = new System.Drawing.Point(451, 43);
             this.labelCafe.Name = "labelCafe";
@@ -90,7 +90,7 @@
             // labelPetrol
             // 
             this.labelPetrol.AutoSize = true;
-            this.labelPetrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelPetrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.labelPetrol.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPetrol.Location = new System.Drawing.Point(68, 107);
             this.labelPetrol.Name = "labelPetrol";
@@ -101,7 +101,7 @@
             // labelPrice
             // 
             this.labelPrice.AutoSize = true;
-            this.labelPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPrice.Location = new System.Drawing.Point(68, 165);
             this.labelPrice.Name = "labelPrice";
@@ -130,7 +130,7 @@
             // 
             // groupBoxPriceLitr
             // 
-            this.groupBoxPriceLitr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBoxPriceLitr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.groupBoxPriceLitr.Controls.Add(this.radioBtnPrice);
             this.groupBoxPriceLitr.Controls.Add(this.radioBtnLiter);
             this.groupBoxPriceLitr.Location = new System.Drawing.Point(71, 216);
@@ -141,6 +141,7 @@
             // 
             // radioBtnPrice
             // 
+            this.radioBtnPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.radioBtnPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioBtnPrice.Location = new System.Drawing.Point(6, 39);
             this.radioBtnPrice.Name = "radioBtnPrice";
@@ -148,11 +149,12 @@
             this.radioBtnPrice.TabIndex = 0;
             this.radioBtnPrice.TabStop = true;
             this.radioBtnPrice.Text = "Price";
-            this.radioBtnPrice.UseVisualStyleBackColor = true;
+            this.radioBtnPrice.UseVisualStyleBackColor = false;
             this.radioBtnPrice.CheckedChanged += new System.EventHandler(this.radioBtnPrice_CheckedChanged);
             // 
             // radioBtnLiter
             // 
+            this.radioBtnLiter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.radioBtnLiter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioBtnLiter.Location = new System.Drawing.Point(6, 10);
             this.radioBtnLiter.Name = "radioBtnLiter";
@@ -160,11 +162,12 @@
             this.radioBtnLiter.TabIndex = 0;
             this.radioBtnLiter.TabStop = true;
             this.radioBtnLiter.Text = "Liter";
-            this.radioBtnLiter.UseVisualStyleBackColor = true;
+            this.radioBtnLiter.UseVisualStyleBackColor = false;
             this.radioBtnLiter.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(293, 223);
             this.label1.Name = "label1";
@@ -174,6 +177,7 @@
             // 
             // label2
             // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(293, 260);
             this.label2.Name = "label2";
@@ -183,6 +187,7 @@
             // 
             // label3
             // 
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(293, 166);
             this.label3.Name = "label3";
@@ -192,7 +197,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4.Location = new System.Drawing.Point(89, 316);
             this.textBox4.Multiline = true;
@@ -204,7 +209,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox5.Location = new System.Drawing.Point(480, 316);
             this.textBox5.Multiline = true;
@@ -216,7 +221,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Aqua;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(190, 440);
             this.button1.Name = "button1";
@@ -228,7 +233,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox6.Location = new System.Drawing.Point(71, 416);
             this.textBox6.Multiline = true;
@@ -240,51 +245,55 @@
             // 
             // checkBxHotdog
             // 
+            this.checkBxHotdog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
             this.checkBxHotdog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBxHotdog.Location = new System.Drawing.Point(480, 107);
             this.checkBxHotdog.Name = "checkBxHotdog";
             this.checkBxHotdog.Size = new System.Drawing.Size(104, 24);
             this.checkBxHotdog.TabIndex = 8;
             this.checkBxHotdog.Text = "Hot-Dog";
-            this.checkBxHotdog.UseVisualStyleBackColor = true;
+            this.checkBxHotdog.UseVisualStyleBackColor = false;
             this.checkBxHotdog.CheckedChanged += new System.EventHandler(this.checkBxHotdog_CheckedChanged);
             // 
             // checkBxQamb
             // 
+            this.checkBxQamb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
             this.checkBxQamb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBxQamb.Location = new System.Drawing.Point(480, 146);
             this.checkBxQamb.Name = "checkBxQamb";
             this.checkBxQamb.Size = new System.Drawing.Size(104, 24);
             this.checkBxQamb.TabIndex = 8;
             this.checkBxQamb.Text = "Qamburger";
-            this.checkBxQamb.UseVisualStyleBackColor = true;
+            this.checkBxQamb.UseVisualStyleBackColor = false;
             this.checkBxQamb.CheckedChanged += new System.EventHandler(this.checkBxQamb_CheckedChanged);
             // 
             // checkBxFries
             // 
+            this.checkBxFries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
             this.checkBxFries.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBxFries.Location = new System.Drawing.Point(480, 186);
             this.checkBxFries.Name = "checkBxFries";
             this.checkBxFries.Size = new System.Drawing.Size(104, 24);
             this.checkBxFries.TabIndex = 8;
             this.checkBxFries.Text = "Fries";
-            this.checkBxFries.UseVisualStyleBackColor = true;
+            this.checkBxFries.UseVisualStyleBackColor = false;
             this.checkBxFries.CheckedChanged += new System.EventHandler(this.checkBxFries_CheckedChanged);
             // 
             // checkBxCola
             // 
+            this.checkBxCola.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
             this.checkBxCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.checkBxCola.Location = new System.Drawing.Point(480, 228);
             this.checkBxCola.Name = "checkBxCola";
             this.checkBxCola.Size = new System.Drawing.Size(104, 24);
             this.checkBxCola.TabIndex = 8;
             this.checkBxCola.Text = "Cola-cola";
-            this.checkBxCola.UseVisualStyleBackColor = true;
+            this.checkBxCola.UseVisualStyleBackColor = false;
             this.checkBxCola.CheckedChanged += new System.EventHandler(this.checkBxCola_CheckedChanged);
             // 
             // textBox7
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox7.Location = new System.Drawing.Point(624, 107);
             this.textBox7.Name = "textBox7";
@@ -295,7 +304,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox9.Location = new System.Drawing.Point(624, 146);
             this.textBox9.Name = "textBox9";
@@ -306,7 +315,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox10.Location = new System.Drawing.Point(624, 186);
             this.textBox10.Name = "textBox10";
@@ -317,7 +326,7 @@
             // 
             // textBox11
             // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox11.Location = new System.Drawing.Point(624, 230);
             this.textBox11.Name = "textBox11";
@@ -328,6 +337,7 @@
             // 
             // maskedTextBoxLitr
             // 
+            this.maskedTextBoxLitr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.maskedTextBoxLitr.Location = new System.Drawing.Point(175, 223);
             this.maskedTextBoxLitr.Mask = "00000";
             this.maskedTextBoxLitr.Name = "maskedTextBoxLitr";
@@ -340,7 +350,7 @@
             // 
             // maskedTextBoxAzn
             // 
-            this.maskedTextBoxAzn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(231)))), ((int)(((byte)(253)))));
+            this.maskedTextBoxAzn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.maskedTextBoxAzn.Location = new System.Drawing.Point(175, 261);
             this.maskedTextBoxAzn.Mask = "00000";
             this.maskedTextBoxAzn.Name = "maskedTextBoxAzn";
@@ -353,7 +363,7 @@
             // 
             // textBPetrolPrice
             // 
-            this.textBPetrolPrice.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.textBPetrolPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.textBPetrolPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBPetrolPrice.Location = new System.Drawing.Point(175, 343);
             this.textBPetrolPrice.Multiline = true;
@@ -362,10 +372,11 @@
             this.textBPetrolPrice.Size = new System.Drawing.Size(100, 41);
             this.textBPetrolPrice.TabIndex = 11;
             this.textBPetrolPrice.Text = "0";
+            this.textBPetrolPrice.TextChanged += new System.EventHandler(this.textBPetrolPrice_TextChanged);
             // 
             // textBCafePrice
             // 
-            this.textBCafePrice.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.textBCafePrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.textBCafePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBCafePrice.Location = new System.Drawing.Point(559, 343);
             this.textBCafePrice.Multiline = true;
@@ -377,6 +388,7 @@
             // 
             // label4
             // 
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(281, 346);
             this.label4.Name = "label4";
@@ -386,6 +398,7 @@
             // 
             // label5
             // 
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(665, 346);
             this.label5.Name = "label5";
@@ -395,6 +408,7 @@
             // 
             // maskedtbHotDog
             // 
+            this.maskedtbHotDog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.maskedtbHotDog.Location = new System.Drawing.Point(683, 107);
             this.maskedtbHotDog.Mask = "00000";
             this.maskedtbHotDog.Name = "maskedtbHotDog";
@@ -407,6 +421,7 @@
             // 
             // maskedtbQamburger
             // 
+            this.maskedtbQamburger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.maskedtbQamburger.Location = new System.Drawing.Point(683, 146);
             this.maskedtbQamburger.Mask = "00000";
             this.maskedtbQamburger.Name = "maskedtbQamburger";
@@ -419,6 +434,7 @@
             // 
             // maskedtbFries
             // 
+            this.maskedtbFries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.maskedtbFries.Location = new System.Drawing.Point(683, 186);
             this.maskedtbFries.Mask = "00000";
             this.maskedtbFries.Name = "maskedtbFries";
@@ -431,6 +447,7 @@
             // 
             // maskedtbCola
             // 
+            this.maskedtbCola.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.maskedtbCola.Location = new System.Drawing.Point(683, 230);
             this.maskedtbCola.Mask = "00000";
             this.maskedtbCola.Name = "maskedtbCola";
@@ -443,6 +460,7 @@
             // 
             // labelResult
             // 
+            this.labelResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(54)))), ((int)(((byte)(124)))));
             this.labelResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelResult.Location = new System.Drawing.Point(536, 440);
             this.labelResult.Name = "labelResult";
@@ -452,7 +470,7 @@
             // 
             // buttonDelAll
             // 
-            this.buttonDelAll.BackColor = System.Drawing.Color.Aqua;
+            this.buttonDelAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
             this.buttonDelAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonDelAll.Location = new System.Drawing.Point(325, 440);
             this.buttonDelAll.Name = "buttonDelAll";
@@ -466,7 +484,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(56)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(802, 537);
             this.Controls.Add(this.labelResult);
             this.Controls.Add(this.label5);

@@ -289,5 +289,15 @@ namespace Oil_system1
             maskedTextBoxLitr.Text = ((int)petrolstation.Liter).ToString();
             textBPetrolPrice.Text = petrolstation.GetAllPrice().ToString();
         }
+
+        private void textBPetrolPrice_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ayten necesen ?");
+        }
     }
 }
