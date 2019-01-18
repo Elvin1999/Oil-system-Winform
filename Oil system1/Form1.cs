@@ -211,6 +211,11 @@ namespace Oil_system1
             maskedtbQamburger.Text = "0";
             textBCafePrice.Text = "0";
             labelResult.Text = "0";
+            maskedTextBoxLitr.Text = "0";
+            maskedTextBoxAzn.Text = "0";
+            petrolstation.Price = 0;
+            petrolstation.Liter = 0;
+            textBPetrolPrice.Text = "0";
         }
 
         private void comboBoxPetrol_SelectedIndexChanged(object sender, EventArgs e)
