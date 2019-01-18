@@ -198,6 +198,7 @@ namespace Oil_system1
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.Enabled = false;
             textBCafePrice.Text = cafe.GetPrice().ToString();
             labelResult.Text = oilSystem.GetAllPrice().ToString();
             DateTime time = DateTime.Now;
@@ -231,6 +232,7 @@ namespace Oil_system1
             petrolstation.Price = 0;
             petrolstation.Liter = 0;
             textBPetrolPrice.Text = "0";
+            button1.Enabled = true;
         }
 
         private void comboBoxPetrol_SelectedIndexChanged(object sender, EventArgs e)
