@@ -220,6 +220,7 @@ namespace Oil_system1
 
         private void comboBoxPetrol_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //I have to change something
             int index = comboBoxPetrol.SelectedIndex;
             textBoxPriceTop.Text = petrolstation.gasolines[index].Price.ToString();
             petrolstation.Price = petrolstation.gasolines[index].Price;
