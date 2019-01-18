@@ -90,7 +90,7 @@
             // labelPetrol
             // 
             this.labelPetrol.AutoSize = true;
-            this.labelPetrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
+            this.labelPetrol.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
             this.labelPetrol.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPetrol.Location = new System.Drawing.Point(68, 107);
             this.labelPetrol.Name = "labelPetrol";
@@ -101,7 +101,7 @@
             // labelPrice
             // 
             this.labelPrice.AutoSize = true;
-            this.labelPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
+            this.labelPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
             this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPrice.Location = new System.Drawing.Point(68, 165);
             this.labelPrice.Name = "labelPrice";
@@ -121,10 +121,11 @@
             // comboBoxPetrol
             // 
             this.comboBoxPetrol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxPetrol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxPetrol.FormattingEnabled = true;
             this.comboBoxPetrol.Location = new System.Drawing.Point(145, 107);
             this.comboBoxPetrol.Name = "comboBoxPetrol";
-            this.comboBoxPetrol.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxPetrol.Size = new System.Drawing.Size(121, 23);
             this.comboBoxPetrol.TabIndex = 3;
             this.comboBoxPetrol.SelectedIndexChanged += new System.EventHandler(this.comboBoxPetrol_SelectedIndexChanged);
             // 
@@ -142,10 +143,10 @@
             // radioBtnPrice
             // 
             this.radioBtnPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
-            this.radioBtnPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioBtnPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioBtnPrice.Location = new System.Drawing.Point(6, 43);
             this.radioBtnPrice.Name = "radioBtnPrice";
-            this.radioBtnPrice.Size = new System.Drawing.Size(58, 26);
+            this.radioBtnPrice.Size = new System.Drawing.Size(64, 26);
             this.radioBtnPrice.TabIndex = 0;
             this.radioBtnPrice.TabStop = true;
             this.radioBtnPrice.Text = "Price";
@@ -155,7 +156,7 @@
             // radioBtnLiter
             // 
             this.radioBtnLiter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
-            this.radioBtnLiter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioBtnLiter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioBtnLiter.Location = new System.Drawing.Point(6, 10);
             this.radioBtnLiter.Name = "radioBtnLiter";
             this.radioBtnLiter.Size = new System.Drawing.Size(58, 26);
@@ -338,10 +339,11 @@
             // maskedTextBoxLitr
             // 
             this.maskedTextBoxLitr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
+            this.maskedTextBoxLitr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.maskedTextBoxLitr.Location = new System.Drawing.Point(175, 223);
             this.maskedTextBoxLitr.Mask = "00000";
             this.maskedTextBoxLitr.Name = "maskedTextBoxLitr";
-            this.maskedTextBoxLitr.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBoxLitr.Size = new System.Drawing.Size(100, 21);
             this.maskedTextBoxLitr.TabIndex = 10;
             this.maskedTextBoxLitr.Text = "0";
             this.maskedTextBoxLitr.ValidatingType = typeof(int);
@@ -351,10 +353,11 @@
             // maskedTextBoxAzn
             // 
             this.maskedTextBoxAzn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
+            this.maskedTextBoxAzn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.maskedTextBoxAzn.Location = new System.Drawing.Point(175, 261);
             this.maskedTextBoxAzn.Mask = "00000";
             this.maskedTextBoxAzn.Name = "maskedTextBoxAzn";
-            this.maskedTextBoxAzn.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBoxAzn.Size = new System.Drawing.Size(100, 21);
             this.maskedTextBoxAzn.TabIndex = 10;
             this.maskedTextBoxAzn.Text = "0";
             this.maskedTextBoxAzn.ValidatingType = typeof(int);
@@ -388,9 +391,9 @@
             // 
             // label4
             // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(128)))));
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(57)))), ((int)(((byte)(85)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(281, 346);
+            this.label4.Location = new System.Drawing.Point(680, 473);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 23);
             this.label4.TabIndex = 12;
@@ -409,10 +412,11 @@
             // maskedtbHotDog
             // 
             this.maskedtbHotDog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
+            this.maskedtbHotDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.maskedtbHotDog.Location = new System.Drawing.Point(683, 107);
             this.maskedtbHotDog.Mask = "00000";
             this.maskedtbHotDog.Name = "maskedtbHotDog";
-            this.maskedtbHotDog.Size = new System.Drawing.Size(54, 20);
+            this.maskedtbHotDog.Size = new System.Drawing.Size(54, 21);
             this.maskedtbHotDog.TabIndex = 10;
             this.maskedtbHotDog.Text = "0";
             this.maskedtbHotDog.ValidatingType = typeof(int);
@@ -422,10 +426,11 @@
             // maskedtbQamburger
             // 
             this.maskedtbQamburger.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
+            this.maskedtbQamburger.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.maskedtbQamburger.Location = new System.Drawing.Point(683, 146);
             this.maskedtbQamburger.Mask = "00000";
             this.maskedtbQamburger.Name = "maskedtbQamburger";
-            this.maskedtbQamburger.Size = new System.Drawing.Size(54, 20);
+            this.maskedtbQamburger.Size = new System.Drawing.Size(54, 21);
             this.maskedtbQamburger.TabIndex = 10;
             this.maskedtbQamburger.Text = "0";
             this.maskedtbQamburger.ValidatingType = typeof(int);
@@ -435,10 +440,11 @@
             // maskedtbFries
             // 
             this.maskedtbFries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
+            this.maskedtbFries.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.maskedtbFries.Location = new System.Drawing.Point(683, 186);
             this.maskedtbFries.Mask = "00000";
             this.maskedtbFries.Name = "maskedtbFries";
-            this.maskedtbFries.Size = new System.Drawing.Size(54, 20);
+            this.maskedtbFries.Size = new System.Drawing.Size(54, 21);
             this.maskedtbFries.TabIndex = 10;
             this.maskedtbFries.Text = "0";
             this.maskedtbFries.ValidatingType = typeof(int);
@@ -448,10 +454,11 @@
             // maskedtbCola
             // 
             this.maskedtbCola.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
+            this.maskedtbCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.maskedtbCola.Location = new System.Drawing.Point(683, 230);
             this.maskedtbCola.Mask = "00000";
             this.maskedtbCola.Name = "maskedtbCola";
-            this.maskedtbCola.Size = new System.Drawing.Size(54, 20);
+            this.maskedtbCola.Size = new System.Drawing.Size(54, 21);
             this.maskedtbCola.TabIndex = 10;
             this.maskedtbCola.Text = "0";
             this.maskedtbCola.ValidatingType = typeof(int);
