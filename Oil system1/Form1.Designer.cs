@@ -62,6 +62,8 @@
             this.maskedtbQamburger = new System.Windows.Forms.MaskedTextBox();
             this.maskedtbFries = new System.Windows.Forms.MaskedTextBox();
             this.maskedtbCola = new System.Windows.Forms.MaskedTextBox();
+            this.labelResult = new System.Windows.Forms.Label();
+            this.buttonDelAll = new System.Windows.Forms.Button();
             this.groupBoxPriceLitr.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -217,6 +219,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox6
             // 
@@ -416,12 +419,34 @@
             this.maskedtbCola.ValidatingType = typeof(int);
             this.maskedtbCola.Leave += new System.EventHandler(this.maskedtbCola_Leave);
             // 
+            // labelResult
+            // 
+            this.labelResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelResult.Location = new System.Drawing.Point(536, 440);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(141, 56);
+            this.labelResult.TabIndex = 13;
+            this.labelResult.Text = "0,0";
+            // 
+            // buttonDelAll
+            // 
+            this.buttonDelAll.BackColor = System.Drawing.Color.Aqua;
+            this.buttonDelAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDelAll.Location = new System.Drawing.Point(325, 440);
+            this.buttonDelAll.Name = "buttonDelAll";
+            this.buttonDelAll.Size = new System.Drawing.Size(106, 45);
+            this.buttonDelAll.TabIndex = 7;
+            this.buttonDelAll.Text = "DeleteAll";
+            this.buttonDelAll.UseVisualStyleBackColor = false;
+            this.buttonDelAll.Click += new System.EventHandler(this.buttonDelAll_click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(802, 537);
+            this.Controls.Add(this.labelResult);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBCafePrice);
@@ -440,6 +465,7 @@
             this.Controls.Add(this.checkBxFries);
             this.Controls.Add(this.checkBxQamb);
             this.Controls.Add(this.checkBxHotdog);
+            this.Controls.Add(this.buttonDelAll);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox6);
@@ -498,6 +524,8 @@
         private System.Windows.Forms.MaskedTextBox maskedtbQamburger;
         private System.Windows.Forms.MaskedTextBox maskedtbFries;
         private System.Windows.Forms.MaskedTextBox maskedtbCola;
+        private System.Windows.Forms.Label labelResult;
+        private System.Windows.Forms.Button buttonDelAll;
     }
 }
 

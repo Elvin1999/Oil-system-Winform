@@ -25,7 +25,6 @@ namespace Oil_system1
             oilSystem._Cafe = cafe;
             oilSystem._Petrol = petrol;
         }
-
         private void checkBxHotdog_CheckedChanged(object sender, EventArgs e)
         {
             if (!maskedtbHotDog.Enabled)
@@ -42,6 +41,7 @@ namespace Oil_system1
                 cafe.foods[0].Count = int.Parse(maskedtbHotDog.Text);
 
             }
+
         }
 
         private void checkBxQamb_CheckedChanged(object sender, EventArgs e)
@@ -59,6 +59,7 @@ namespace Oil_system1
             if (maskedtbQamburger.Text != String.Empty)
             {
                 cafe.foods[1].Count = int.Parse(maskedtbQamburger.Text);
+
             }
         }
 
@@ -77,7 +78,9 @@ namespace Oil_system1
             if (maskedtbFries.Text != String.Empty)
             {
                 cafe.foods[2].Count = int.Parse(maskedtbFries.Text);
+
             }
+
         }
 
         private void checkBxCola_CheckedChanged(object sender, EventArgs e)
@@ -102,32 +105,57 @@ namespace Oil_system1
             {
                 cafe.foods[0].Count = int.Parse(maskedtbHotDog.Text);
             }
-            cafe.Price += cafe.foods[0].Count * cafe.foods[0].Price;
+
             textBCafePrice.Text = cafe.GetPrice().ToString();
-            maskedtbHotDog.Enabled = false;
+            if (checkBxHotdog.Checked)
+            {
+                maskedtbHotDog.Enabled = true;
+            }
+            else
+            {
+                maskedtbHotDog.Enabled = false;
+            }
+            checkBxHotdog.Checked = false;
         }
 
         private void maskedtbQamburger_Leave(object sender, EventArgs e)
         {
+
             if (maskedtbQamburger.Text != String.Empty)
             {
                 cafe.foods[1].Count = int.Parse(maskedtbQamburger.Text);
+
             }
-            cafe.Price += cafe.foods[1].Count* cafe.foods[1].Price;
             textBCafePrice.Text = cafe.GetPrice().ToString();
-            
-            maskedtbQamburger.Enabled = false;
+            if (checkBxQamb.Checked)
+            {
+                maskedtbQamburger.Enabled = true;
+            }
+            else
+            {
+                maskedtbQamburger.Enabled = false;
+            }
+            checkBxQamb.Checked = false;
         }
 
         private void maskedtbFries_Leave(object sender, EventArgs e)
         {
+
             if (maskedtbFries.Text != String.Empty)
             {
                 cafe.foods[2].Count = int.Parse(maskedtbFries.Text);
             }
-            cafe.Price += cafe.foods[2].Count * cafe.foods[2].Price;
+
             textBCafePrice.Text = cafe.GetPrice().ToString();
-            maskedtbFries.Enabled = false;
+            if (checkBxFries.Checked)
+            {
+                maskedtbFries.Enabled = true;
+            }
+            else
+            {
+                maskedtbFries.Enabled = false;
+            }
+            checkBxFries.Checked = false;
         }
         private void maskedtbCola_Leave(object sender, EventArgs e)
         {
@@ -135,9 +163,35 @@ namespace Oil_system1
             {
                 cafe.foods[3].Count = int.Parse(maskedtbCola.Text);
             }
-            cafe.Price += cafe.foods[3].Count * cafe.foods[3].Price;
             textBCafePrice.Text = cafe.GetPrice().ToString();
-            maskedtbCola.Enabled = false;
+            if (checkBxCola.Checked)
+            {
+                maskedtbCola.Enabled = true;
+            }
+            else
+            {
+                maskedtbCola.Enabled = false;
+            }
+            checkBxCola.Checked = false;
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBCafePrice.Text = cafe.GetPrice().ToString();
+            labelResult.Text = oilSystem.GetAllPrice().ToString();
+        }
+        private void buttonDelAll_click(object sender, EventArgs e)
+        {
+            //after write file I have to write oilsystem to json file
+            for (int i = 0; i < cafe.foods.Count; i++)
+            {
+                cafe.foods[i].Count = 0;
+            }
+            maskedtbCola.Text = "0";
+            maskedtbFries.Text = "0";
+            maskedtbHotDog.Text = "0";
+            maskedtbQamburger.Text = "0";
+            textBCafePrice.Text = "0";
+            labelResult.Text = "0";
         }
     }
 }

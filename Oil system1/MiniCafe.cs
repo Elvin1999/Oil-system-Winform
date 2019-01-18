@@ -25,9 +25,16 @@ namespace Oil_system1
     }
     class MiniCafe
     {
+
         public double Price { get; set; }
+
         public double GetPrice()
-        {            
+        {
+            Price = 0;
+            foreach (var item in foods)
+            {
+                Price += item.Price * item.Count;
+            }
             return Price;
         }
         public List<Food> foods = new List<Food>()
