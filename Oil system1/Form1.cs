@@ -34,6 +34,7 @@ namespace Oil_system1
         }
         private void checkBxHotdog_CheckedChanged(object sender, EventArgs e)
         {
+            
             if (!maskedtbHotDog.Enabled)
             {
                 maskedtbHotDog.Enabled = true;
@@ -211,12 +212,10 @@ namespace Oil_system1
 
             var result = JsonConvert.SerializeObject(oilSystem);
             Guid guid = Guid.NewGuid();
-            //MessageBox.Show(guid.ToString() + ".json");
             File.WriteAllText(guid.ToString() + ".json", result);
         }
         private void buttonDelAll_click(object sender, EventArgs e)
         {
-            //after write file I have to write oilsystem to json file
             for (int i = 0; i < cafe.foods.Count; i++)
             {
                 cafe.foods[i].Count = 0;
