@@ -73,6 +73,7 @@ namespace Oil_system1
     {
         public double Liter { get; set; }
         public double Price { get; set; }
+        public double AllPrice { get; set; }
         public double GetAllPrice()
         {
             return Liter * Price;

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -197,6 +199,20 @@ namespace Oil_system1
         {
             textBCafePrice.Text = cafe.GetPrice().ToString();
             labelResult.Text = oilSystem.GetAllPrice().ToString();
+            DateTime time = DateTime.Now;
+            if (petrolstation.Liter == 0)
+            {
+                petrolstation.AllPrice = 0;
+            }
+            else
+            {
+                petrolstation.AllPrice = oilSystem.GetAllPrice();
+            }
+
+            var result = JsonConvert.SerializeObject(oilSystem);
+            Guid guid = Guid.NewGuid();
+            //MessageBox.Show(guid.ToString() + ".json");
+            File.WriteAllText(guid.ToString() + ".json", result);
         }
         private void buttonDelAll_click(object sender, EventArgs e)
         {
@@ -283,21 +299,13 @@ namespace Oil_system1
                 maskedTextBoxAzn.Text = "0";
             }
             int index = comboBoxPetrol.SelectedIndex;
-            petrolstation.Price = petrolstation.gasolines[index].Price;           
+            petrolstation.Price = petrolstation.gasolines[index].Price;
             double myprice = double.Parse(maskedTextBoxAzn.Text);
             petrolstation.Liter = myprice / petrolstation.gasolines[index].Price;
             maskedTextBoxLitr.Text = ((int)petrolstation.Liter).ToString();
             textBPetrolPrice.Text = petrolstation.GetAllPrice().ToString();
         }
 
-        private void textBPetrolPrice_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Ayten necesen ?");
-        }
     }
 }

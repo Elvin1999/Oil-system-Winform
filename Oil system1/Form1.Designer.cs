@@ -375,7 +375,7 @@
             this.textBPetrolPrice.Size = new System.Drawing.Size(100, 41);
             this.textBPetrolPrice.TabIndex = 11;
             this.textBPetrolPrice.Text = "0";
-            this.textBPetrolPrice.TextChanged += new System.EventHandler(this.textBPetrolPrice_TextChanged);
+            
             // 
             // textBCafePrice
             // 
