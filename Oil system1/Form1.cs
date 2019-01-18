@@ -14,7 +14,7 @@ namespace Oil_system1
     {
         OilSystem oilSystem = new OilSystem();
         MiniCafe cafe = new MiniCafe();
-        Petrol petrol = new Petrol();
+        PetrolStation petrolstation = new PetrolStation();
         public Form1()
         {
             InitializeComponent();
@@ -22,8 +22,13 @@ namespace Oil_system1
             maskedtbCola.Enabled = false;
             maskedtbQamburger.Enabled = false;
             maskedtbHotDog.Enabled = false;
+            maskedTextBoxAzn.Enabled = false;
+            maskedTextBoxLitr.Enabled = false;
             oilSystem._Cafe = cafe;
-            oilSystem._Petrol = petrol;
+            oilSystem._PetrolStation = petrolstation;
+            comboBoxPetrol.Items.AddRange(petrolstation.gasolines.ToArray());
+            comboBoxPetrol.DisplayMember = "Name";
+            comboBoxPetrol.SelectedIndex = 0;
         }
         private void checkBxHotdog_CheckedChanged(object sender, EventArgs e)
         {
@@ -105,7 +110,10 @@ namespace Oil_system1
             {
                 cafe.foods[0].Count = int.Parse(maskedtbHotDog.Text);
             }
-
+            else
+            {
+                maskedtbHotDog.Text = "0";
+            }
             textBCafePrice.Text = cafe.GetPrice().ToString();
             if (checkBxHotdog.Checked)
             {
@@ -126,6 +134,10 @@ namespace Oil_system1
                 cafe.foods[1].Count = int.Parse(maskedtbQamburger.Text);
 
             }
+            else
+            {
+                maskedtbQamburger.Text = "0";
+            }
             textBCafePrice.Text = cafe.GetPrice().ToString();
             if (checkBxQamb.Checked)
             {
@@ -145,7 +157,10 @@ namespace Oil_system1
             {
                 cafe.foods[2].Count = int.Parse(maskedtbFries.Text);
             }
-
+            else
+            {
+                maskedtbFries.Text = "0";
+            }
             textBCafePrice.Text = cafe.GetPrice().ToString();
             if (checkBxFries.Checked)
             {
@@ -162,6 +177,10 @@ namespace Oil_system1
             if (maskedtbCola.Text != String.Empty)
             {
                 cafe.foods[3].Count = int.Parse(maskedtbCola.Text);
+            }
+            else
+            {
+                maskedtbCola.Text = "0";
             }
             textBCafePrice.Text = cafe.GetPrice().ToString();
             if (checkBxCola.Checked)
@@ -192,6 +211,77 @@ namespace Oil_system1
             maskedtbQamburger.Text = "0";
             textBCafePrice.Text = "0";
             labelResult.Text = "0";
+        }
+
+        private void comboBoxPetrol_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = comboBoxPetrol.SelectedIndex;
+            textBoxPriceTop.Text = petrolstation.gasolines[index].Price.ToString();
+            petrolstation.Price = petrolstation.gasolines[index].Price;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            maskedTextBoxLitr.Enabled = true;
+            maskedTextBoxAzn.Enabled = false;
+            if (maskedTextBoxAzn.Text != String.Empty)
+            {
+                maskedTextBoxAzn.Text = "0";
+            }
+        }
+
+        private void maskedtbHotDog_Enter(object sender, EventArgs e)
+        {
+            MaskedTextBox maskedText = sender as MaskedTextBox;
+            if (maskedText.Text == "0")
+            {
+                maskedText.Text = String.Empty;
+            }
+        }
+
+        private void maskedTextBoxLitr_Leave(object sender, EventArgs e)
+        {
+            if (maskedTextBoxLitr.Text == String.Empty)
+            {
+                maskedTextBoxLitr.Text = "0";
+            }
+            int index = comboBoxPetrol.SelectedIndex;
+            petrolstation.Price = petrolstation.gasolines[index].Price;
+            petrolstation.Liter = double.Parse(maskedTextBoxLitr.Text);
+            textBPetrolPrice.Text = petrolstation.GetAllPrice().ToString();
+        }
+
+        private void radioBtnPrice_CheckedChanged(object sender, EventArgs e)
+        {
+            maskedTextBoxLitr.Enabled = false;
+            maskedTextBoxAzn.Enabled = true;
+            if (maskedTextBoxLitr.Text != String.Empty)
+            {
+                maskedTextBoxLitr.Text = "0";
+            }
+        }
+
+        private void maskedTextBoxLitr_Enter(object sender, EventArgs e)
+        {
+            MaskedTextBox box = sender as MaskedTextBox;
+            if (box.Text == "0")
+            {
+                box.Text = String.Empty;
+            }
+        }
+
+        private void maskedTextBoxAzn_Leave(object sender, EventArgs e)
+        {
+            if (maskedTextBoxAzn.Text == String.Empty)
+            {
+                maskedTextBoxAzn.Text = "0";
+            }
+            int index = comboBoxPetrol.SelectedIndex;
+            petrolstation.Price = petrolstation.gasolines[index].Price;           
+            double myprice = double.Parse(maskedTextBoxAzn.Text);
+            petrolstation.Liter = myprice / petrolstation.gasolines[index].Price;
+            maskedTextBoxLitr.Text = ((int)petrolstation.Liter).ToString();
+            textBPetrolPrice.Text = petrolstation.GetAllPrice().ToString();
         }
     }
 }

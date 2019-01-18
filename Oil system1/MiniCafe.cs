@@ -12,22 +12,25 @@ namespace Oil_system1
         public double Price { get; set; }
         public int Count { get; set; }
     }
+    class Gasoline
+    {
+        public string Name { get; set; }
+        public double Price { get; set; }
+    }
     class OilSystem
     {
         public double GetAllPrice()
         {
             double price = _Cafe.GetPrice();
-            price += _Petrol.GetAllPrice();
+            price += _PetrolStation.GetAllPrice();
             return price;
         }
         public MiniCafe _Cafe { get; set; }
-        public Petrol _Petrol { get; set; }
+        public PetrolStation _PetrolStation { get; set; }
     }
     class MiniCafe
     {
-
         public double Price { get; set; }
-
         public double GetPrice()
         {
             Price = 0;
@@ -65,12 +68,30 @@ namespace Oil_system1
             },
         };
     }
-    class Petrol
-    {
 
+    class PetrolStation
+    {
+        public double Liter { get; set; }
+        public double Price { get; set; }
         public double GetAllPrice()
         {
-            return 0.0;
+            return Liter * Price;
         }
+        public List<Gasoline> gasolines = new List<Gasoline>()
+        {
+            new Gasoline(){
+                Name="AI92",
+                Price=0.95
+            },
+            new Gasoline(){
+                Name="AI95",
+                Price=1.15
+            },
+            new Gasoline(){
+                Name="Dizel",
+                Price=0.6
+            },
+        };
     }
+
 }
